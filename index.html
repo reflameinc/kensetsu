@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="建設業界の転職相談。未経験OK・完全無料。建設ガールがチャットで直接ご相談に乗ります。30秒のかんたん質問で面談予約まで。">
+<link rel="canonical" href="https://reflame.co.jp/lp/kensetsu/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="建設業界の転職相談｜建設ガールに無料で相談">
+<meta property="og:description" content="未経験OK・完全無料。建設ガールがチャットで直接ご相談に乗ります。30秒のかんたん質問で面談予約まで。">
+<meta property="og:image" content="https://reflame.co.jp/lp/kensetsu/assets/ogp.jpg">
+<meta property="og:url" content="https://reflame.co.jp/lp/kensetsu/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://reflame.co.jp/lp/kensetsu/assets/ogp.jpg">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5KH7WRCP');</script>
+<!-- End Google Tag Manager -->
+<title>ケンセツキャリア｜建設業界の転職相談</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS  — 既存 style.css のトンマナを踏襲
+============================================================ */
+:root{
+  --green:#2e9e48; --green-dark:#1c7a35; --green-light:#5ec872;
+  --green-pale:#e8f7ec; --green-xpale:#f3fbf5;
+  --white:#fff; --off-white:#f7f8f7; --gray-light:#e3e8e3;
+  --gray:#8a9a8a; --text:#1a211a; --text-mid:#4a5a4a;
+  --orange:#f05a22; --orange-dark:#d44d1a;
+  --r-sm:8px; --r-md:12px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);background:var(--green-xpale);line-height:1.6;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;}
+
+.app{max-width:520px;margin:0 auto;min-height:100vh;background:var(--green-xpale);display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.06);}
+
+/* ── header ── */
+.site-header{position:sticky;top:0;z-index:300;background:var(--green);height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;box-shadow:0 2px 8px rgba(0,0,0,.25);}
+.hd-left{display:flex;align-items:center;gap:9px;}
+.hd-ava{width:34px;height:34px;border-radius:50%;border:2px solid #fff;object-fit:cover;object-position:center top;background:#fff;}
+.hd-name{color:#fff;line-height:1.2;}
+.hd-name b{font-size:15px;font-weight:900;display:block;}
+.hd-name span{font-size:10px;font-weight:500;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:4px;}
+.hd-dot{width:7px;height:7px;border-radius:50%;background:#7dff9b;box-shadow:0 0 0 0 rgba(125,255,155,.7);animation:pulse 1.8s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(125,255,155,.7);}70%{box-shadow:0 0 0 7px rgba(125,255,155,0);}100%{box-shadow:0 0 0 0 rgba(125,255,155,0);}}
+.logo-free{background:var(--orange);color:#fff;font-size:11px;font-weight:700;padding:4px 9px;border-radius:20px;}
+
+/* ── intro banner ── */
+.intro{background:var(--green);padding:0 16px 18px;text-align:center;color:#fff;}
+.intro h1{font-size:18px;font-weight:900;line-height:1.5;padding-top:4px;}
+.intro h1 .hl{background:linear-gradient(transparent 60%,rgba(255,224,138,.5) 60%);padding:0 3px;}
+.intro p{font-size:12px;color:rgba(255,255,255,.9);margin-top:4px;}
+.intro-wave{height:18px;background:var(--green);border-radius:0 0 50% 50%/0 0 18px 18px;}
+
+/* progress bar */
+.pbar{position:sticky;top:54px;z-index:290;background:#fff;display:flex;align-items:center;gap:10px;padding:9px 16px;border-bottom:1px solid var(--gray-light);box-shadow:0 2px 6px rgba(0,0,0,.05);}
+.pbar-track{flex:1;height:7px;background:var(--gray-light);border-radius:99px;overflow:hidden;}
+.pbar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--green-light),var(--green));border-radius:99px;transition:width .45s ease;}
+.pbar-text{font-size:11px;font-weight:700;color:var(--green-dark);white-space:nowrap;}
+
+/* ============================================================
+   CHAT
+============================================================ */
+.chat{flex:1;padding:18px 14px 24px;display:flex;flex-direction:column;gap:14px;}
+
+/* row */
+.row{display:flex;align-items:flex-end;gap:8px;opacity:0;transform:translateY(8px);animation:popin .32s ease forwards;}
+@keyframes popin{to{opacity:1;transform:translateY(0);}}
+.row.user{justify-content:flex-end;}
+.avatar{width:42px;height:42px;border-radius:50%;border:2px solid var(--orange);object-fit:cover;object-position:center top;flex-shrink:0;background:#fff;}
+
+.msg-wrap{max-width:78%;}
+.msg-name{font-size:11px;color:var(--gray);font-weight:700;margin:0 0 4px 4px;}
+.bubble{background:#fff;border-radius:4px 16px 16px 16px;padding:12px 15px;font-size:15px;font-weight:500;color:var(--text);line-height:1.7;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.bubble .hl{background:linear-gradient(transparent 62%,#ffe08a 62%);font-weight:700;padding:0 2px;}
+.bubble .em{color:var(--orange);font-weight:700;}
+.row.user .bubble{background:var(--green);color:#fff;border-radius:16px 4px 16px 16px;box-shadow:0 2px 8px rgba(46,158,72,.3);}
+
+/* typing indicator */
+.typing .bubble{display:flex;gap:5px;padding:15px;}
+.typing .dot{width:8px;height:8px;border-radius:50%;background:var(--gray);animation:blink 1.3s infinite;}
+.typing .dot:nth-child(2){animation-delay:.2s;}
+.typing .dot:nth-child(3){animation-delay:.4s;}
+@keyframes blink{0%,60%,100%{opacity:.3;transform:translateY(0);}30%{opacity:1;transform:translateY(-3px);}}
+
+/* choice buttons */
+.choices{display:flex;flex-direction:column;gap:9px;padding:4px 0 4px 50px;opacity:0;transform:translateY(8px);animation:popin .32s ease forwards;}
+.choice-btn{display:flex;align-items:center;gap:11px;background:#fff;border:2px solid var(--green-light);color:var(--green-dark);font-size:16px;font-weight:700;padding:15px 16px;border-radius:14px;text-align:left;transition:all .15s;box-shadow:0 2px 6px rgba(46,158,72,.12);min-height:56px;-webkit-tap-highlight-color:transparent;}
+.choice-btn .ico{width:24px;height:24px;border-radius:50%;border:2px solid var(--green-light);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+.choice-btn .ico svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:3;opacity:0;}
+.choice-btn:hover{background:var(--green-pale);transform:translateY(-1px);box-shadow:0 4px 12px rgba(46,158,72,.2);}
+.choice-btn:active{transform:scale(.98);}
+.choice-btn.picked{background:var(--green);border-color:var(--green);color:#fff;}
+.choice-btn.picked .ico{background:#fff;border-color:#fff;}
+.choice-btn.picked .ico svg{stroke:var(--green);opacity:1;}
+
+/* date picker grid */
+.date-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:4px 0 4px 50px;opacity:0;transform:translateY(8px);animation:popin .32s ease forwards;}
+.date-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:#fff;border:2px solid var(--green-light);color:var(--green-dark);font-weight:700;padding:13px 8px;border-radius:14px;transition:all .15s;box-shadow:0 2px 6px rgba(46,158,72,.12);min-height:62px;-webkit-tap-highlight-color:transparent;}
+.date-btn .dnum{font-size:17px;}
+.date-btn .dwd{font-size:12px;color:var(--gray);}
+.date-btn:hover{background:var(--green-pale);transform:translateY(-1px);box-shadow:0 4px 12px rgba(46,158,72,.2);}
+.date-btn:active{transform:scale(.97);}
+.date-btn.picked{background:var(--green);border-color:var(--green);color:#fff;}
+.date-btn.picked .dwd{color:rgba(255,255,255,.85);}
+.date-btn.span2{grid-column:1 / -1;flex-direction:row;gap:6px;min-height:52px;font-size:15px;}
+
+/* input row (name / tel) */
+.input-area{padding:6px 0 4px 50px;opacity:0;transform:translateY(8px);animation:popin .32s ease forwards;}
+.input-row{display:flex;gap:8px;align-items:stretch;}
+.chat-input{flex:1;min-width:0;width:100%;border:2px solid var(--gray-light);background:#fff;padding:14px 15px;font-family:inherit;font-size:16px;color:var(--text);border-radius:14px;outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;}
+.chat-input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(46,158,72,.12);}
+.send-btn{flex-shrink:0;width:54px;background:var(--orange);border:none;border-radius:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(240,90,34,.38);transition:all .2s;}
+.send-btn:hover{background:var(--orange-dark);}
+.send-btn:active{transform:scale(.95);}
+.send-btn svg{width:22px;height:22px;fill:#fff;}
+.input-err{font-size:13px;color:#c62828;font-weight:600;margin:6px 0 0 4px;display:none;}
+.input-err.show{display:block;}
+.input-hint{font-size:12px;color:var(--gray);margin:6px 0 0 4px;}
+
+/* final cta button (big) */
+.final-cta{padding:8px 0 4px 0;opacity:0;transform:translateY(8px);animation:popin .32s ease forwards;}
+.final-cta button{width:100%;background:var(--orange);color:#fff;border:none;padding:18px;font-size:18px;font-weight:900;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 5px 18px rgba(240,90,34,.4);transition:all .22s;position:relative;overflow:hidden;min-height:58px;}
+.final-cta button:hover{background:var(--orange-dark);transform:translateY(-1px);}
+.final-cta button::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:shine 2.6s ease-in-out infinite;}
+@keyframes shine{0%{left:-80%;}100%{left:130%;}}
+.consent{font-size:11px;color:var(--gray);text-align:center;margin:10px 4px 0;line-height:1.6;}
+.consent a{color:var(--green-dark);text-decoration:underline;}
+
+/* trust line */
+.trust{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;padding:14px;}
+.trust span{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text-mid);font-weight:600;}
+.trust svg{width:14px;height:14px;fill:none;stroke:var(--green);stroke-width:2;}
+
+/* footer */
+.site-footer{background:var(--green);padding:18px 16px;text-align:center;}
+.site-footer p{font-size:11px;color:rgba(255,255,255,.5);line-height:2;}
+.site-footer a{color:rgba(255,255,255,.65);text-decoration:none;}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KH7WRCP"
+title="gtm" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="app">
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="hd-left">
+      <img class="hd-ava" src="assets/akinosan_small.png" alt="担当">
+      <div class="hd-name">
+        <b>ケンセツキャリア</b>
+        <span><span class="hd-dot"></span>オンライン・建設専門アドバイザー</span>
+      </div>
+    </div>
+    <span class="logo-free">完全無料</span>
+  </header>
+
+  <!-- intro -->
+  <div class="intro">
+    <h1><span class="hl">まずはお気軽に</span>チャットでご相談ください</h1>
+    <p>30秒・タップだけ。職歴のご入力は不要です</p>
+  </div>
+  <div class="intro-wave"></div>
+
+  <!-- progress -->
+  <div class="pbar">
+    <div class="pbar-track"><div class="pbar-fill" id="pbarFill"></div></div>
+    <span class="pbar-text" id="pbarText">0 / 7</span>
+  </div>
+
+  <!-- chat thread -->
+  <main class="chat" id="chat"></main>
+
+  <!-- trust -->
+  <div class="trust">
+    <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>SSL暗号化</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>登録無料</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>未経験OK</span>
+  </div>
+
+  <footer class="site-footer">
+    <p><a href="https://reflame.co.jp/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>　|　<a href="https://reflame.co.jp/company/" target="_blank" rel="noopener">運営会社</a><br>&copy; REFLAME Inc.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var chat=document.getElementById('chat');
+  var AVA='assets/akinosan_small.png';
+  var NAME='建設ガール';
+  var data={}; // 収集データ
+  var sent=false;
+
+  // 進捗バー（全7問：経験/面談日/時間帯/年齢/名前/電話/メール）
+  var STEP=0, TOTAL=7;
+  function bump(){ STEP++; setProgress(STEP); }
+  function setProgress(n){
+    var fill=document.getElementById('pbarFill');
+    var txt=document.getElementById('pbarText');
+    if(fill) fill.style.width=Math.round(n/TOTAL*100)+'%';
+    if(txt) txt.textContent=n+' / '+TOTAL;
+  }
+
+  /* ▼▼▼ Googleスプレッドシート送信先（★現在の保存先★）▼▼▼
+     GASウェブアプリのURL（…/exec）を下の '' に貼り付け。空ならスキップ。
+     設定手順: SETUP_スプレッドシート連携.md */
+  var SHEET_ENDPOINT='https://script.google.com/macros/s/AKfycbyasxcJ0rLwdSlu3Kz933-wpl0p5Bz0b1qrIxmYCm5pn-7iJxIlKIy6v6L-AAtIJDzF7g/exec';
+  /* ▲▲▲ ここまで ▲▲▲ */
+
+  /* ▼▼▼ Salesforce Web-to-Lead 設定（※今は未使用・将来SFに繋ぐ時用に温存）▼▼▼
+     使う時は SF_ENABLED=true ＋ complete() で sendToSalesforce() を呼ぶ。 */
+  var SF_OID='00D5i000005mNPhEAM'; // 株式会社デザイナー（本番組織ID）
+  var SF_ENDPOINT='https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8';
+  var SF_ENABLED=false;
+  /* ▲▲▲ ここまで ▲▲▲ */
+
+  /* ▼▼▼ Slack 通知設定 ▼▼▼
+     SlackのIncoming Webhook URLを下の '' に貼ると、リード来たら即チャンネル通知。
+     例: var SLACK_WEBHOOK='https://hooks.slack.com/services/T.../B.../xxxx';
+     空のままだと通知スキップ。 */
+  var SLACK_WEBHOOK='';
+  /* ▲▲▲ ここまで ▲▲▲ */
+
+  // URLのクエリパラメータを安全に取得
+  function getParam(n){ try{ return new URLSearchParams(location.search).get(n)||''; }catch(e){ return ''; } }
+
+  // 電話番号の正規化：全角→半角、ハイフン/スペース等の非数字を除去
+  function normTel(v){
+    return (v||'')
+      .replace(/[０-９]/g,function(d){return String.fromCharCode(d.charCodeAt(0)-0xFEE0);})
+      .replace(/[^0-9]/g,'');
+  }
+
+  // ★現在の保存先：Googleスプレッドシート（GASウェブアプリ）へ送信
+  function sendToSheet(){
+    if(!SHEET_ENDPOINT) return;
+    var payload={
+      name:data.name||'', tel:data.tel||'', email:data.email||'',
+      age:data.age||'',      // 年齢
+      experience:data.experience||'', timing:data.timing||'',
+      meetDate:data.meetDate||'', meetTime:data.meetTime||'',
+      ref:getParam('ref'),   // インフルエンサーのアカウント名（?ref=akino 等）
+      page:location.href     // フルURL（バックアップ用）
+    };
+    try{
+      fetch(SHEET_ENDPOINT,{
+        method:'POST',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body:JSON.stringify(payload)
+      }).catch(function(){});
+    }catch(e){}
+  }
+
+  // （将来用）Salesforce Web-to-Lead へ送信
+  function sendToSalesforce(){
+    if(!SF_ENABLED) return;
+    // 氏名を 姓/名 に分割（スペース区切り。区切りが無ければ全部を姓へ）
+    var nm=(data.name||'').trim().split(/[\s　]+/);
+    var lastName=nm[0]||'お名前未入力';
+    var firstName=nm.slice(1).join(' ');
+
+    var desc=[
+      '■建設ガールLP（TikTok）チャット回答',
+      '建設経験: '+(data.experience||'-'),
+      '希望時期: '+(data.timing||'-'),
+      '面談希望日: '+(data.meetDate||'-'),
+      '希望時間帯: '+(data.meetTime||'-'),
+      '流入元: TikTok｜建設ガールLP',
+      'ページ: '+location.href
+    ].join('\n');
+
+    var params={
+      oid:SF_OID,
+      last_name:lastName,
+      first_name:firstName,
+      phone:data.tel||'',
+      company:'連携なし',        // 個人リードの社内慣習に合わせる
+      lead_source:'Advertisement',
+      description:desc
+    };
+    var body=Object.keys(params).map(function(k){
+      return encodeURIComponent(k)+'='+encodeURIComponent(params[k]);
+    }).join('&');
+
+    try{
+      fetch(SF_ENDPOINT,{
+        method:'POST',
+        mode:'no-cors', // Web-to-Leadは応答を返さないfire-and-forget
+        headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
+        body:body
+      }).catch(function(){});
+    }catch(e){}
+  }
+
+  // Slack通知（Incoming Webhook）
+  function sendToSlack(){
+    if(!SLACK_WEBHOOK) return;
+    var refName=getParam('ref');
+    var text=[
+      ':fire: *建設ガールLPに新規リード！*',
+      'お名前：'+(data.name||'-'),
+      '電話：'+(data.tel||'-'),
+      '建設経験：'+(data.experience||'-'),
+      '希望時期：'+(data.timing||'-'),
+      '面談希望：'+(data.meetDate||'-')+' '+(data.meetTime||''),
+      'インフルエンサー：'+(refName||'(なし)'),
+      '――――――――――――',
+      'スプレッドシートを確認して、IS部隊で架電をお願いします :telephone_receiver:'
+    ].join('\n');
+    try{
+      fetch(SLACK_WEBHOOK,{
+        method:'POST',
+        mode:'no-cors', // text/plainの単純リクエストでプリフライト回避
+        body:JSON.stringify({text:text})
+      }).catch(function(){});
+    }catch(e){}
+  }
+
+  // GTMへコンバージョンイベントをpush（個人情報は送らない＝計測専用）
+  function pushConversion(){
+    try{
+      window.dataLayer=window.dataLayer||[];
+      window.dataLayer.push({
+        event:'lead_submit',     // ←GTMのトリガーにこのイベント名を使う
+        lp:'kensetsu_girl',
+        experience:data.experience||'',
+        timing:data.timing||'',
+        meet_date:data.meetDate||'',
+        meet_time:data.meetTime||''
+      });
+    }catch(e){}
+  }
+
+  function scrollDown(){ window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'}); }
+
+  // 担当の吹き出し
+  function advisor(html, withName){
+    var row=document.createElement('div'); row.className='row advisor';
+    row.innerHTML='<img class="avatar" src="'+AVA+'" alt="'+NAME+'">'+
+      '<div class="msg-wrap">'+(withName?'<div class="msg-name">'+NAME+'</div>':'')+
+      '<div class="bubble">'+html+'</div></div>';
+    chat.appendChild(row); scrollDown();
+  }
+  // ユーザーの吹き出し
+  function user(text){
+    var row=document.createElement('div'); row.className='row user';
+    row.innerHTML='<div class="msg-wrap"><div class="bubble">'+text+'</div></div>';
+    chat.appendChild(row); scrollDown();
+  }
+  // タイピング → コールバック
+  function typing(ms, cb){
+    var row=document.createElement('div'); row.className='row advisor typing';
+    row.innerHTML='<img class="avatar" src="'+AVA+'"><div class="msg-wrap"><div class="bubble"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>';
+    chat.appendChild(row); scrollDown();
+    setTimeout(function(){ row.remove(); cb(); }, ms);
+  }
+  // 選択肢
+  function choices(opts, onPick){
+    var box=document.createElement('div'); box.className='choices';
+    opts.forEach(function(o){
+      var b=document.createElement('button'); b.className='choice-btn';
+      b.innerHTML='<span class="ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>'+o;
+      b.onclick=function(){
+        Array.prototype.forEach.call(box.children,function(c){c.disabled=true;c.style.pointerEvents='none';});
+        b.classList.add('picked');
+        setTimeout(function(){ box.remove(); user(o); onPick(o); }, 260);
+      };
+      box.appendChild(b);
+    });
+    chat.appendChild(box); scrollDown();
+  }
+  // テキスト入力（chat-input + 送信）
+  function askInput(opts){ // {placeholder, type, hint, validate, onSend}
+    var area=document.createElement('div'); area.className='input-area';
+    area.innerHTML=
+      '<div class="input-row">'+
+        '<input class="chat-input" type="'+(opts.type||'text')+'" placeholder="'+opts.placeholder+'"'+(opts.inputmode?' inputmode="'+opts.inputmode+'"':'')+(opts.autocomplete?' autocomplete="'+opts.autocomplete+'"':'')+'>'+
+        '<button class="send-btn" aria-label="送信"><svg viewBox="0 0 24 24"><path d="M3 20l18-8L3 4v6l13 2-13 2z"/></svg></button>'+
+      '</div>'+
+      (opts.hint?'<div class="input-hint">'+opts.hint+'</div>':'')+
+      '<div class="input-err">'+(opts.errMsg||'入力内容をご確認ください')+'</div>';
+    chat.appendChild(area); scrollDown();
+    var input=area.querySelector('.chat-input');
+    var send=area.querySelector('.send-btn');
+    var err=area.querySelector('.input-err');
+    input.focus();
+    function submit(){
+      var v=input.value.trim();
+      if(!opts.validate(v)){ err.classList.add('show'); input.style.borderColor='#e53935'; return; }
+      area.remove(); user(opts.display?opts.display(v):v); opts.onSend(v);
+    }
+    send.onclick=submit;
+    input.addEventListener('keydown',function(e){ if(e.key==='Enter'){e.preventDefault();submit();} });
+    input.addEventListener('input',function(){ err.classList.remove('show'); input.style.borderColor=''; });
+  }
+  // 最終CTA（送信ボタン）
+  function finalCta(label, onClick){
+    var box=document.createElement('div'); box.className='final-cta';
+    box.innerHTML='<button>'+label+'</button>'+
+      '<p class="consent">送信をもって<a href="https://reflame.co.jp/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなします。</p>';
+    var btn=box.querySelector('button');
+    btn.onclick=function(){
+      if(btn.disabled) return;       // 二重送信ガード
+      btn.disabled=true; btn.textContent='送信中…';
+      setTimeout(function(){ box.remove(); onClick(); }, 450);
+    };
+    chat.appendChild(box); scrollDown();
+  }
+
+  /* ──────────────────────────────
+     会話フロー
+  ────────────────────────────── */
+  function start(){
+    typing(700, function(){
+      var _src=(getParam('utm_source')||getParam('src')||'').toLowerCase();
+      var _thanks;
+      if(_src==='tiktok'){ _thanks='TikTokをご覧いただきありがとうございます&#x1F64C;'; }
+      else if(/(meta|facebook|instagram|fb|ig)/.test(_src)){ _thanks='広告をご覧いただきありがとうございます&#x1F64C;'; }
+      else { _thanks='ご覧いただきありがとうございます&#x1F64C;'; }
+      advisor('こんにちは、'+NAME+'です！<br>'+_thanks, true);
+      typing(1100, function(){
+        advisor('まずは<span class="em">かんたんな質問にタップ</span>でお答えください！');
+        typing(900, q1);
+      });
+    });
+  }
+
+  // Q1 経験
+  function q1(){
+    advisor('① 建設業界での<span class="hl">お仕事のご経験</span>はありますか？');
+    choices(['未経験・他業種から','経験あり（1〜3年）','経験あり（3年以上）'], function(ans){
+      data.experience=ans; bump();
+      typing(800, function(){
+        advisor('ありがとうございます！未経験の方も大歓迎ですので、ご安心ください&#x1F44D;');
+        typing(900, q3);
+      });
+    });
+  }
+
+  // Q4 年齢（個人情報ブロックの先頭）
+  function qAge(){
+    advisor('④ <span class="hl">ご年齢</span>を教えてください！');
+    choices(['〜22歳','23〜25歳','26〜28歳','29〜31歳','32〜35歳','36歳〜'], function(ans){
+      data.age=ans; bump();
+      typing(800, function(){
+        advisor('ありがとうございます！それでは、<span class="hl">ご連絡先</span>を教えてください&#x1F60A;');
+        askName();
+      });
+    });
+  }
+
+  // 直近の営業日（平日）を n 日ぶん生成
+  function nextBizDays(n){
+    var wds=['日','月','火','水','木','金','土'];
+    var out=[]; var d=new Date(); d.setDate(d.getDate()+1);
+    while(out.length<n){
+      var w=d.getDay();
+      if(w!==0 && w!==6){ out.push({num:(d.getMonth()+1)+'/'+d.getDate(), wd:wds[w]}); }
+      d.setDate(d.getDate()+1);
+    }
+    return out;
+  }
+  // 日付の2カラムグリッド選択
+  function dateChoices(items, onPick){
+    var box=document.createElement('div'); box.className='date-grid';
+    function pick(b, val){
+      Array.prototype.forEach.call(box.children,function(c){c.disabled=true;c.style.pointerEvents='none';});
+      b.classList.add('picked');
+      setTimeout(function(){ box.remove(); user(val); onPick(val); }, 260);
+    }
+    items.forEach(function(it){
+      var b=document.createElement('button'); b.className='date-btn';
+      b.innerHTML='<span class="dnum">'+it.num+'</span><span class="dwd">('+it.wd+')</span>';
+      b.onclick=function(){ pick(b, it.num+'('+it.wd+')'); };
+      box.appendChild(b);
+    });
+    var b2=document.createElement('button'); b2.className='date-btn span2';
+    b2.innerHTML='<span class="dnum">日程は相談したい</span>';
+    b2.onclick=function(){ pick(b2, '日程は相談したい'); };
+    box.appendChild(b2);
+    chat.appendChild(box); scrollDown();
+  }
+
+  // Q3 面談希望日
+  function q3(){
+    advisor('② <span class="hl">面談のご希望日</span>はいつがよろしいですか？');
+    dateChoices(nextBizDays(5), function(ans){
+      data.meetDate=ans; bump();
+      typing(700, q4);
+    });
+  }
+
+  // Q4 時間帯
+  function q4(){
+    advisor('③ その日の<span class="hl">時間帯</span>はいつ頃がよろしいですか？');
+    choices(['午前（〜12時）','午後（12〜17時）','夕方以降（17時〜）','時間は相談したい'], function(ans){
+      data.meetTime=ans; bump();
+      typing(800, function(){
+        var sodan=(data.meetDate.indexOf('相談')>=0 || data.meetTime.indexOf('相談')>=0);
+        var msg=sodan
+          ? 'ありがとうございます！<span class="em">日程は改めてご相談</span>させていただきます&#x1F4C5;'
+          : 'ありがとうございます！それでは<span class="em">'+escapeHtml(data.meetDate)+' '+escapeHtml(data.meetTime)+'</span>あたりで調整いたします&#x1F4C5;';
+        advisor(msg);
+        typing(700, qAge);
+      });
+    });
+  }
+
+  // 名前
+  function askName(){
+    askInput({
+      placeholder:'お名前（例：田中 健一）',
+      autocomplete:'name',
+      validate:function(v){ return v.length>=1; },
+      errMsg:'お名前をご入力ください',
+      onSend:function(v){
+        data.name=v; bump();
+        typing(800, function(){
+          advisor(escapeHtml(v)+'さん、ありがとうございます&#x1F60A;<br>続いて<span class="hl">お電話番号</span>を教えてください。');
+          askTel();
+        });
+      }
+    });
+  }
+
+  // 電話
+  function askTel(){
+    askInput({
+      placeholder:'09012345678（ハイフンなし）',
+      type:'tel', inputmode:'numeric', autocomplete:'tel',
+      hint:'ご入力の番号に、担当者よりご連絡いたします。しつこい勧誘はございません。',
+      validate:function(v){ return /^(090|080|070|050)\d{8}$/.test(normTel(v)); },
+      errMsg:'090・080・070・050から始まる携帯番号をご入力ください',
+      display:function(v){ return '&#x1F4DE; '+normTel(v); },
+      onSend:function(v){
+        data.tel=normTel(v); bump();
+        typing(800, function(){
+          advisor('ありがとうございます！最後に<span class="hl">メールアドレス</span>を教えてください。');
+          askEmail();
+        });
+      }
+    });
+  }
+
+  // メールアドレス
+  function askEmail(){
+    askInput({
+      placeholder:'example@email.com',
+      type:'email', inputmode:'email', autocomplete:'email',
+      validate:function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
+      errMsg:'正しいメールアドレスをご入力ください',
+      onSend:function(v){
+        data.email=v.trim(); bump();
+        typing(900, function(){
+          advisor('ありがとうございます！これで完了です&#x1F389;<br>準備ができましたら、下のボタンから送信してください。');
+          finalCta('送信する', complete);
+        });
+      }
+    });
+  }
+
+  // 完了
+  function complete(){
+    if(sent) return; sent=true;   // 二重送信ガード
+    sendToSheet();      // ← ★Googleスプレッドシートへ保存（現在の保存先）
+    sendToSlack();      // ← Slack へ即通知
+    pushConversion();   // ← GTMへCVイベント(lead_submit)
+    // sendToSalesforce(); // ← 将来SFに繋ぐ時はこれを有効化
+    typing(900, function(){
+      var doneMsg=escapeHtml(data.name)+'さん、送信を受け付けました！<br>1営業日以内に担当キャリアアドバイザーより、改めて詳細日時についてご連絡いたします。<br>お話しできるのを楽しみにしております&#x1F60A;';
+      advisor(doneMsg, true);
+    });
+  }
+
+  function escapeHtml(s){ return s.replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+
+  start();
+})();
+</script>
+</body>
+</html>
